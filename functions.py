@@ -1,5 +1,6 @@
 import csv
 
+
 #funcao que busca o ultimo id da coluna
 def get_last_id():
     csv_file = open('cadastro.csv', 'r')
@@ -26,10 +27,10 @@ def ler_data(index):
     for line in csv_reader:
         l = line['id']
         if l == index:
-            print(line['nome'], end=' ')
-            print(line['email'], end=' ')
-            print(line['endereco'])
+            dados_clientes = [line['nome'], line['email'], line['endereco']]
 
-
+    csv_file.close()    
+    return dados_clientes
+    
 
 
