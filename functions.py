@@ -28,7 +28,9 @@ def ler_data(index):
         l = line['id']
         if l == index:
             dados_clientes = [line['nome'], line['email'], line['endereco']]
-        
-        return dados_clientes
+
+    csv_file.close()    
+    return dados_clientes
+    
 
 
