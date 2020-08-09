@@ -33,4 +33,3 @@ def ler_data(index):
     return dados_clientes
     
 
-
